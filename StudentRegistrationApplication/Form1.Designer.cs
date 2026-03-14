@@ -33,6 +33,8 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -159,7 +161,7 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(228, 423);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(99, 21);
+            this.comboBox3.Size = new System.Drawing.Size(82, 21);
             this.comboBox3.TabIndex = 13;
             this.comboBox3.Text = "Year";
             // 
@@ -167,7 +169,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(87, 479);
+            this.button1.Location = new System.Drawing.Point(87, 533);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(189, 48);
             this.button1.TabIndex = 14;
@@ -187,13 +189,36 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Date of birth*";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label7.Location = new System.Drawing.Point(30, 464);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(151, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Program to apply*";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(34, 493);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(276, 21);
+            this.comboBox4.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(369, 562);
+            this.ClientSize = new System.Drawing.Size(369, 598);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox3);
@@ -210,6 +235,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Registration";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -234,5 +260,7 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
